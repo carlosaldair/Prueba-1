@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi primera Página Web con CSS3">
+  <meta name="keywords" content="HTML5, CSS3, Web, Diseño web, UMG">
+  <title>Ejemplo HTML5-CSS3</title>
+  <link rel="stylesheet" href="content/estilo.css">
+</head>
+
+<body class="body">
+
+  <header class="pageHeader">
+  <button id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+  <nav id="mainNav" class="hidden">
+    <ul>
+      <li class="active"><a href="index.html">Inicio</a></li>
+      <li><a href="noticias.html">Noticias</a></li>
+      <li><a href="acerca.html">Acerca De</a></li>
+      <li><a href="contacto.html">Contáctanos</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="Main">
+    <section class="content">
+      <article class="Top">
+        <header>
+          <h2><a href="#">¿Qué es HTML5?</a></h2>
+        </header>
+        <p>HTML5 es la quinta versión del lenguaje de marcado HTML, utilizado para estructurar y presentar contenido en la web.</p>
+        <p>Define la estructura de una página web usando etiquetas para organizar texto, imágenes, videos, formularios, etc.</p>
+        <footer>
+          <small><i>Publicado el 25/07/2025 por UMG-Guastatoya</i></small>
+        </footer>
+      </article>
+
+      <article class="Bottom">
+        <header>
+          <h2><a href="#">Introducción a CSS3</a></h2>
+        </header>
+        <p>CSS3 es un lenguaje de diseño utilizado para definir la apariencia visual de páginas web escritas en HTML.</p>
+        <p>Puedes cambiar colores, tamaños de texto, fondos, bordes, y mucho más.</p>
+        <footer>
+          <small><i>Publicado el 25/07/2025 por UMG-Guastatoya</i></small>
+        </footer>
+      </article>
+    </section>
+
+    <aside class="top-sidebar">
+      <h2>Navegación</h2>
+      <ul class="navigation">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Acerca De</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </aside>
+
+    <aside class="bottom-sidebar">
+      <div class="featured">
+        <h2>¿Qué es y para qué sirve JavaScript?</h2>
+        <p>JavaScript permite agregar interactividad y dinamismo a las páginas web. Si HTML estructura el contenido y CSS lo estiliza, JavaScript le da vida.</p>
+        <a href="#">Leer más >></a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="pageFooter">
+    <p>&copy; 2025 - www.misitio.com</p>
+  </footer>
+
+    <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
